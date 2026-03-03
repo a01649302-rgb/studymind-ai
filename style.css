@@ -1,0 +1,116 @@
+/* Configuración General */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f9f4; /* Un verde muy sutil de fondo */
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Header */
+header {
+    background: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2D6A4F; /* Verde vivo */
+}
+
+/* Sección Hero (Principal) */
+.hero {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #e6f2ed 0%, #d1e9ff 100%); /* Degradado verde/azul */
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    color: #1A3A3A;
+    line-height: 1.2;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+/* Botones con interactividad */
+.btn-primary {
+    background-color: #007AFF; /* Azul Apple */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+    display: inline-block;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05); /* Se agranda un poco al pasar el mouse */
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    color: #2D6A4F;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Funcionalidades */
+.features {
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-around;
+    background: white;
+}
+
+.feature-card {
+    text-align: center;
+    padding: 20px;
+    width: 30%;
+}
+
+.feature-card .icon {
+    font-size: 40px;
+}
+
+/* Registro */
+.registration {
+    padding: 60px 0;
+    text-align: center;
+    background: #2D6A4F;
+    color: white;
+}
+
+.registration input {
+    padding: 15px;
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+    margin-right: 10px;
+}
