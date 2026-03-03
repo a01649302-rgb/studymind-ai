@@ -69,6 +69,31 @@
     <footer>
         <p>&copy; 2024 Study Mind AI. Todos los derechos reservados.</p>
     </footer>
+<form id="form">
+  <input id="nombre" placeholder="Nombre" required>
+  <input id="email" type="email" placeholder="Email" required>
+  <button type="submit">Enviar</button>
+</form>
 
+<script>
+document.getElementById("form").addEventListener("submit", async (e) => {
+  e.preventDefault()
+
+  const nombre = document.getElementById("nombre").value
+  const email = document.getElementById("email").value
+
+  const res = await fetch("/api/guardar", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({ nombre, email })
+  })
+
+  const data = await res.json()
+
+  alert("Datos guardados ✅")
+})
+</script>
 </body>
 </html>
